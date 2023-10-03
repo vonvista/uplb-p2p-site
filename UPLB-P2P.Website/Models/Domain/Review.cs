@@ -20,6 +20,8 @@ namespace UPLB_P2P.Website.Models.Domain
         [Required]
         public string Content { get; set; }
 
+        public decimal Rating { get; set; }
+
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
