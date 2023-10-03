@@ -20,5 +20,6 @@ namespace UPLB_P2P.Website.Models.Domain
         // Navigation Property
         public ICollection<Review> Reviews { get; set; }
 
+        public bool IsDeleted { get; set; }
     }
 }

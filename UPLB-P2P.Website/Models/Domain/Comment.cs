@@ -18,6 +18,7 @@ namespace UPLB_P2P.Website.Models.Domain
         public string Content { get; set; }
 
         public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
         // Navigation Property
         public User User { get; set; }
@@ -25,6 +26,7 @@ namespace UPLB_P2P.Website.Models.Domain
         //public Comment ParentComment { get; set; }
         //public ICollection<Comment> ChildComments { get; set; }
         public ICollection<Vote> Votes { get; set; }
+        public bool IsDeleted { get; set; }
 
     }
 }

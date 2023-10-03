@@ -21,11 +21,14 @@ namespace UPLB_P2P.Website.Models.Domain
         public string Password { get; set; }
 
         public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
         // Navigation Property
         public ICollection<Review> Reviews { get; set; }
         public ICollection<Comment> Comments { get; set; }
         public ICollection<Vote> Votes { get; set; }
+
+        public bool IsDeleted { get; set; }
 
     }
 }
