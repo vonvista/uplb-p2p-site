@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPLB-P2P.Website", "UPLB-P2P.Website\UPLB-P2P.Website.csproj", "{8F5A7C98-E3CF-4F5A-A344-703D4F10940C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UPLB-P2P.Website", "UPLB-P2P.Website\UPLB-P2P.Website.csproj", "{8F5A7C98-E3CF-4F5A-A344-703D4F10940C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
