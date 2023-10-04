@@ -1,0 +1,61 @@
+﻿@using Microsoft.AspNetCore.Components;
+
+<div class="card mt-4">
+	<div class="card-body">
+		@*create text with name of professor, name of course, and overall rating*@
+		<div class="d-flex flex-row mb-2 align-items-center">
+						
+			<div class="d-flex flex-row me-3 align-items-center">
+				<i class="bi bi-person-square pe-2"></i>
+				<h4 class="m-0">@ProfessorName</h4>
+			</div>
+
+			<div class="d-flex flex-row me-3 align-items-center">
+				<i class="bi bi-book-half pe-2 "></i>
+				<h4 class="m-0">@CourseName</h4>
+			</div>
+
+			<div class="d-flex flex-row me-3 align-items-center">
+				<i class="bi bi-stars pe-2 "></i>
+				<h4 class="m-0">@Rating</h4>
+			</div>
+
+		</div>
+
+		@*<div>
+			<h5>Exam difficulty: 10/10 • Workload: 10/10 • Vibes: 10/10</h5>
+		</div>*@
+
+		<div>
+			<h6>Review by: <a class="link-opacity-75-hover">vonvista</a> • 16 hours ago</h6>
+		</div>
+
+		<p style="white-space: pre-line;">
+			Pros:
+			• Very responsive si sir sa emails. Ilang beses na ako nakapagemail sa kanya ng late at nagrereply siya agad. 
+			• Sa mga topics ineexplain niya talaga in a way na madaling intindihin.
+			• Parang fatherly figure si sir tas ang bait niya Considerate din siya, may one time na hindi ako nakapagsubmit ng gawain on time tas tinanggap pa rin niya
+			• UNOABLE SIYA
+			• In terms sa requirement, di naman ganun kadami. keri lang siya tas madali lang (legit madali lang talaga). May pa project si sir pero pwede indiv or by group.
+			• Di ako masyadong nakasali sa synch classes, pero nag enjoy ako sa discussions niya at may natutunan naman ako from the topics.
+			• Nagbibigay feedback din pala si sir. Minsan may remarks si sir pag may mali sa gawa mo pero di naman harsh.
+			Cons pero di talaga cons:
+			• ano yung submission kasi namin ay through email. Hindi ka naman magwoworry kung natanggap ba niya or hindi kasi nagrereply siya dun sa submission mo ng "Got your HW/CW submission" ganorn.
+			• May pa synch classes si sir. Pero recorded naman.
+		</p>
+					
+	</div>
+</div>
+
+
+@code {
+
+	[Parameter]
+	public string ProfessorName { get; set; } = "Prof. Juan Dela Cruz";
+	
+	[Parameter]
+	public string CourseName { get; set; } = "CMSC 11";
+
+	[Parameter]
+	public string Rating { get; set; } = "5.0";
+}
