@@ -12,7 +12,7 @@ namespace UPLB_P2P.Website.Controllers
         {
             _logger = logger;
         }
-
+        
         public IActionResult Index()
         {
             return View();
@@ -23,6 +23,16 @@ namespace UPLB_P2P.Website.Controllers
             return View();
         }
         public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+        public IActionResult Signup()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
         {
             return View();
         }

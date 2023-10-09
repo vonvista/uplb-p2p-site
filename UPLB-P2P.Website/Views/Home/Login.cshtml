@@ -1,0 +1,33 @@
+﻿@*create login page*@
+
+<div class="container">
+	<div class="row align-items-center">
+
+		<div class="col-sm">
+			<h1>Login</h1>
+			<label for="email" class="form-label">Email address</label>
+			<input type="email" class="form-control" id="email" placeholder="name@example.com">
+			<br/>
+			<label for="password" class="form-label">Password</label>
+			<input type="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
+			@*button for form submission*@
+			<br />
+			<button type="button" class="btn btn-primary">Login</button>
+			<button type="button" class="btn btn-danger">Login using Google</button>
+			@*don't have an account yet, signup*@
+			<br /><br />
+			<a href="/signup">Don't have an account yet? Sign up here.</a>
+			
+		</div>
+
+		<div class="col-sm">
+			@*svg illustration from Content/Images*@
+			<img src="/Content/Images/login.svg" alt="login" width="500" height="500">
+
+		</div>
+		
+	</div>
+	
+	
+</div>
+
